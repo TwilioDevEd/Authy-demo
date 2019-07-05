@@ -29,5 +29,12 @@ This app uses [MongoDB](https://www.mongodb.com/) as a data store. You will have
     - On *NIX, may be as easy as running `mongod` in a new tab.
 - Run `nodemon .` or `node .` from the cloned repo to run the app
 
+### Setup with docker
+- Clone this repo
+- Register for a [Twilio Account](https://www.twilio.com/).
+- Setup an Account Security app via the [Twilio Console](https://twilio.com/console).
+- Grab an Authy API key from the Dashboard and paste it in `.docker-compose.yml`
+- Run `docker-compose up`
+
 ### License
 - MIT

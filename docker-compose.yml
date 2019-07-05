@@ -1,0 +1,26 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:latest
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    ports:
+      - 27017:27017
+    command:
+      - mongod
+  backend:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      environment:
+        - ACCOUNT_SECURITY_API_KEY=ENTER_SECRET_HERE
+        - PORT=1337
+        - MONGO_DATABASE=mongodb://mongodb
+      ports:
+        - "1337:1337"
+      links:
+        - mongodb
+      depends_on:
+        - mongodb
+      command: node .

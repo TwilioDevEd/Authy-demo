@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var expressSession = require('express-session');
 var mongoStore = require('connect-mongo')({session: expressSession});
 var mongoose = require('mongoose');
+mongoose.Promise = Promise;
 
 var config = require('./server/config.js');
 
@@ -22,7 +23,8 @@ if(!config.API_KEY){
 /**
  * Setup MongoDB connection.
  */
-mongoose.connect('mongodb://localhost:27017/accountsecuritydemo');
+const databaseUrl = process.env.MONGO_DATABASE || "mongodb://localhost:27017"
+mongoose.connect(databaseUrl + '/accountsecuritydemo');
 var db = mongoose.connection;
 
 app.use(cookieParser());
