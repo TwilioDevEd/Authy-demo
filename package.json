@@ -34,7 +34,7 @@
     "express-session": "^1.14.1",
     "mongodb": "^2.2.11",
     "mongoose": "^4.6.5",
-    "nodemon": "^1.11.0",
+    "nodemon": "^2.0.0",
     "qs": "^6.3.0",
     "request": "^2.76.0"
   }
