@@ -35,7 +35,7 @@
     "express-session": "^1.17.0",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.6",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.6",
     "qs": "^6.9.2",
     "twilio": "^3.43.1"
   },
