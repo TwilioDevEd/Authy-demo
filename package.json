@@ -40,7 +40,7 @@
     "twilio": "^3.43.1"
   },
   "devDependencies": {
-    "@shelf/jest-mongodb": "^1.1.5",
+    "@shelf/jest-mongodb": "^1.2.4",
     "jest": "^26.0.1",
     "mongodb-memory-server": "^6.9.6",
     "supertest": "^6.1.3"
