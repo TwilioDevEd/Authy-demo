@@ -42,7 +42,7 @@
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.4",
     "jest": "^26.0.1",
-    "mongodb-memory-server": "^6.9.6",
+    "mongodb-memory-server": "^7.0.0",
     "supertest": "^6.1.3"
   }
 }
